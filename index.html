@@ -7,11 +7,6 @@
     <title>Music Key Finder</title>
 </head>
 <body>
-    <div id="info">
-        <h1 id="heading"></h1>
-        <h2 id="selected"></h2>
-        <div id="output"></div>
-    </div>
     <div id="notes">
         <button class="note" id="note-A">A</button>
         <button class="note" id="note-A#">A#/Bb</button>
@@ -28,7 +23,13 @@
     </div>
 
     <div class="center">
-        <button id="clear" onclick="clearNotes()">Clear selection</button>
+        <div id="clear" onclick="clearNotes()">Clear selection</div>
+    </div>
+
+    <div id="info">
+        <h1 id="heading"></h1>
+        <h2 id="selected"></h2>
+        <div id="output"></div>
     </div>
 
     <script src="script.js"></script>
