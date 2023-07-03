@@ -24,17 +24,17 @@ keys = {
     "G Major": ['G', 'A', 'B', 'C', 'D', 'E', 'F#/Gb'],
     "G Minor": ['G', 'A', 'A#/Bb', 'C', 'D', 'D#/Eb', 'F'],
     "Ab Harmonic Minor": ['G#/Ab', 'A#/Bb', 'C', 'C#/Db', 'D#/Eb', 'F', 'G'],
-    "A Harmonic Minor": ['A', 'B', 'C', 'D', 'E', 'F', 'G#/Ab'],
-    "Bb Harmonic Minor": ['A#/Bb', 'C', 'C#/Db', 'Eb', 'F', 'F#/Gb', 'A'],
-    "B Harmonic Minor": ['B', 'C#/Db', 'D', 'E', 'F#/Gb', 'G', 'A#/Bb'],
-    "C Harmonic Minor": ['C', 'D', 'D#/Eb', 'F', 'G', 'G#/Ab', 'C'],
-    "C#/Db Harmonic Minor": ['C#/Db', 'D#/Eb', 'E', 'F#/Gb', 'G#/Ab', 'A#/Bb', 'C#/Db'],
-    "D Harmonic Minor": ['D', 'E', 'F', 'G', 'A', 'A#/Bb', 'D'],
-    "Eb Harmonic Minor": ['D#/Eb', 'F', 'F#/Gb', 'G#/Ab', 'A#/Bb', 'B', 'D#/Eb'],
-    "E Harmonic Minor": ['E', 'F#/Gb', 'G', 'A', 'B', 'C', 'E'],
-    "F Harmonic Minor": ['F', 'G', 'G#/Ab', 'A#/Bb', 'C', 'C#/Db', 'F'],
-    "F#/Gb Harmonic Minor": ['F#/Gb', 'G#/Ab', 'A', 'B', 'C#/Db', 'D', 'F#/Gb'],
-    "G Harmonic Minor": ['G', 'A', 'A#/Bb', 'C', 'D', 'D#/Eb', 'G'],
+    "A Harmonic Minor": ['A', 'B', 'C', 'D', 'E', 'F#/Gb', 'G#/Ab'],
+    "Bb Harmonic Minor": ['A#/Bb', 'C', 'C#/Db', 'Eb', 'F', 'G', 'A'],
+    "B Harmonic Minor": ['B', 'C#/Db', 'D', 'E', 'F#/Gb', 'G#/Ab', 'A#/Bb'],
+    "C Harmonic Minor": ['C', 'D', 'D#/Eb', 'F', 'G', 'G#/Ab', 'B'],
+    "C#/Db Harmonic Minor": ['C#/Db', 'D#/Eb', 'E', 'F#/Gb', 'G#/Ab', 'A#/Bb', 'C'],
+    "D Harmonic Minor": ['D', 'E', 'F', 'G', 'A', 'A#/Bb', 'C#/Db'],
+    "Eb Harmonic Minor": ['D#/Eb', 'F', 'F#/Gb', 'G#/Ab', 'A#/Bb', 'C', 'D'],
+    "E Harmonic Minor": ['E', 'F#/Gb', 'G', 'A', 'B', 'C#/Db', 'D#/Eb'],
+    "F Harmonic Minor": ['F', 'G', 'G#/Ab', 'A#/Bb', 'C', 'C#/Db', 'E'],
+    "F#/Gb Harmonic Minor": ['F#/Gb', 'G#/Ab', 'A', 'B', 'C#/Db', 'D#/Eb', 'F'],
+    "G Harmonic Minor": ['G', 'A', 'A#/Bb', 'C', 'D', 'D#/Eb', 'F#/Gb'],
     "Ab Melodic Minor": ['G#/Ab', 'A#/Bb', 'C', 'C#/Db', 'D#/Eb', 'F', 'G'],
     "A Melodic Minor": ['A', 'B', 'C', 'D', 'E', 'F#/Gb', 'G#/Ab'],
     "Bb Melodic Minor": ['A#/Bb', 'C', 'C#/Db', 'Eb', 'F', 'G', 'A'],
@@ -69,6 +69,7 @@ keys = {
     "A Phrygian": ['A', 'A#/Bb', 'B', 'C#/Db', 'D', 'D#/Eb', 'F'],
     "B Phrygian": ['B', 'C', 'D', 'E', 'F#/Gb', 'G', 'A'],
 }
+// Note: harmonic minors have duplicates and need to be fixed
 
 heading_text = document.getElementById("heading");
 selected_text = document.getElementById("selected");
@@ -80,7 +81,7 @@ for (let i = 0; i < notes.length; i++) {
     notes[i].addEventListener("click", function() { noteSelect(notes[i]) });
 }
 
-heading_text.innerHTML = "Select a note";
+heading_text.innerHTML = "Select notes";
 
 function noteSelect(note) {
     if (!selected.includes(note.innerHTML)) {
