@@ -23,17 +23,17 @@ keys = {
     "F#/Gb Minor": ['F#/Gb', 'G#/Ab', 'A', 'B', 'C#/Db', 'D', 'E'],
     "G Major": ['G', 'A', 'B', 'C', 'D', 'E', 'F#/Gb'],
     "G Minor": ['G', 'A', 'A#/Bb', 'C', 'D', 'D#/Eb', 'F'],
-    "Ab Harmonic Minor": ['G#/Ab', 'A#/Bb', 'C', 'C#/Db', 'D#/Eb', 'F', 'G'],
-    "A Harmonic Minor": ['A', 'B', 'C', 'D', 'E', 'F#/Gb', 'G#/Ab'],
-    "Bb Harmonic Minor": ['A#/Bb', 'C', 'C#/Db', 'Eb', 'F', 'G', 'A'],
-    "B Harmonic Minor": ['B', 'C#/Db', 'D', 'E', 'F#/Gb', 'G#/Ab', 'A#/Bb'],
+    "Ab Harmonic Minor": ['G#/Ab', 'A#/Bb', 'B', 'C#/Db', 'D#/Eb', 'E', 'G'],
+    "A Harmonic Minor": ['A', 'B', 'C', 'D', 'E', 'F', 'G#/Ab'],
+    "Bb Harmonic Minor": ['A#/Bb', 'C', 'C#/Db', 'Eb', 'F', 'F#/Gb', 'A'],
+    "B Harmonic Minor": ['B', 'C#/Db', 'D', 'E', 'F#/Gb', 'G', 'A#/Bb'],
     "C Harmonic Minor": ['C', 'D', 'D#/Eb', 'F', 'G', 'G#/Ab', 'B'],
-    "C#/Db Harmonic Minor": ['C#/Db', 'D#/Eb', 'E', 'F#/Gb', 'G#/Ab', 'A#/Bb', 'C'],
+    "C#/Db Harmonic Minor": ['C#/Db', 'D#/Eb', 'E', 'F#/Gb', 'G#/Ab', 'A', 'C'],
     "D Harmonic Minor": ['D', 'E', 'F', 'G', 'A', 'A#/Bb', 'C#/Db'],
-    "Eb Harmonic Minor": ['D#/Eb', 'F', 'F#/Gb', 'G#/Ab', 'A#/Bb', 'C', 'D'],
-    "E Harmonic Minor": ['E', 'F#/Gb', 'G', 'A', 'B', 'C#/Db', 'D#/Eb'],
+    "Eb Harmonic Minor": ['D#/Eb', 'F', 'F#/Gb', 'G#/Ab', 'A#/Bb', 'B', 'D'],
+    "E Harmonic Minor": ['E', 'F#/Gb', 'G', 'A', 'B', 'C', 'D#/Eb'],
     "F Harmonic Minor": ['F', 'G', 'G#/Ab', 'A#/Bb', 'C', 'C#/Db', 'E'],
-    "F#/Gb Harmonic Minor": ['F#/Gb', 'G#/Ab', 'A', 'B', 'C#/Db', 'D#/Eb', 'F'],
+    "F#/Gb Harmonic Minor": ['F#/Gb', 'G#/Ab', 'A', 'B', 'C#/Db', 'D', 'F'],
     "G Harmonic Minor": ['G', 'A', 'A#/Bb', 'C', 'D', 'D#/Eb', 'F#/Gb'],
     "Ab Melodic Minor": ['G#/Ab', 'A#/Bb', 'C', 'C#/Db', 'D#/Eb', 'F', 'G'],
     "A Melodic Minor": ['A', 'B', 'C', 'D', 'E', 'F#/Gb', 'G#/Ab'],
@@ -107,7 +107,7 @@ function noteSelect(note) {
 }
 
 function clearNotes() {
-    heading_text.innerHTML = "Select a note";
+    heading_text.innerHTML = "Select notes";
     selected_text.innerHTML = "";
     selected = [];
     output.innerHTML = "";
